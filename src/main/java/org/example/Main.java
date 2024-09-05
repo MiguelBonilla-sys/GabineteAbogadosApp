@@ -1,7 +1,7 @@
 package org.example;
 
-import org.example.Controlers.AsuntoControler;
-import org.example.Controlers.LoginControler;
+import org.example.Controllers.AsuntoController;
+import org.example.Controllers.LoginController;
 import org.example.Views.AsuntoView;
 import org.example.Views.LoginView;
 
@@ -12,14 +12,14 @@ public class Main {
         AsuntoView asuntoView = new AsuntoView();
 
         // Inicializar los controladores
-        LoginControler loginControler = new LoginControler(loginView);
-        AsuntoControler asuntoControler = new AsuntoControler(asuntoView);
+        LoginController loginController = new LoginController(loginView);
+        AsuntoController asuntoController = new AsuntoController(asuntoView);
 
         // Iniciar la aplicación con el controlador de login
-        loginControler.iniciarAplicacion();
+        loginController.iniciarAplicacion();
 
         // Ejemplo de uso del controlador de asuntos
-        asuntoControler.agregarAsunto();
-        asuntoControler.mostrarAsuntos();
+        asuntoController.agregarAsunto();
+        asuntoController.mostrarAsuntos();
     }
 }

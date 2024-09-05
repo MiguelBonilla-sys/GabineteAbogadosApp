@@ -1,4 +1,4 @@
-package org.example.Controlers;
+package org.example.Controllers;
 
 import org.example.Models.ClienteModel;
 import org.example.Models.ProcuradorModel;
@@ -7,12 +7,12 @@ import org.example.Views.LoginView;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LoginControler {
+public class LoginController {
     private LoginView vista;
     private Map<String, ClienteModel> clientes; // Map para almacenar clientes simulados
     private Map<String, ProcuradorModel> procuradores; // Map para almacenar procuradores simulados
 
-    public LoginControler(LoginView vista) {
+    public LoginController(LoginView vista) {
         this.vista = vista;
         clientes = new HashMap<String, ClienteModel>();
         procuradores = new HashMap<String, ProcuradorModel>();

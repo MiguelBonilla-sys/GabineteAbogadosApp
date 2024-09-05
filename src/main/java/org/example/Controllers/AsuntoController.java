@@ -1,15 +1,15 @@
-package org.example.Controlers;
+package org.example.Controllers;
 
 import org.example.Models.AsuntoModel;
 import org.example.Views.AsuntoView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AsuntoControler {
+public class AsuntoController {
     private AsuntoView vista;
     private List<AsuntoModel> asuntos;
 
-    public AsuntoControler(AsuntoView vista) {
+    public AsuntoController(AsuntoView vista) {
         this.vista = vista;
         this.asuntos = new ArrayList<AsuntoModel>();
     }
